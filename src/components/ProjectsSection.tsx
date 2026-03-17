@@ -3,15 +3,39 @@ import { ExternalLink, Github } from "lucide-react";
 import { useState } from "react";
 
 const projects = [
-  { letter: "N", title: "Neural Canvas", desc: "AI-powered art generation platform using diffusion models and GANs.", tags: ["React", "Python", "TensorFlow", "WebGL"], cat: "AI/ML" },
-  { letter: "C", title: "CloudSync", desc: "Real-time collaborative workspace with end-to-end encryption.", tags: ["TypeScript", "WebSocket", "PostgreSQL", "Docker"], cat: "Full-Stack" },
-  { letter: "Q", title: "QuantumViz", desc: "3D visualization engine for quantum computing simulations.", tags: ["Three.js", "WebGL", "C++", "WASM"], cat: "WebGL" },
-  { letter: "D", title: "DataFlow", desc: "Real-time data pipeline dashboard with predictive analytics.", tags: ["React", "D3.js", "Python", "Kafka"], cat: "Full-Stack" },
-  { letter: "E", title: "EchoAI", desc: "Voice-controlled smart home interface with natural language processing.", tags: ["React Native", "Python", "NLP", "IoT"], cat: "AI/ML" },
-  { letter: "P", title: "PixelForge", desc: "Browser-based 3D modeling tool with real-time ray tracing.", tags: ["WebGL", "Three.js", "Rust", "WASM"], cat: "WebGL" },
+  {
+    letter: "B",
+    title: "Biometric Attendance System",
+    desc: "A smart attendance system using facial recognition to eliminate proxy attendance. Features AI-powered recognition, real-time dashboard, automated reports, and role-based authentication.",
+    tags: ["React", "Django", "OpenCV", "Tailwind"],
+    cat: "Full-Stack",
+    role: "UI/UX Designer + Contributor",
+    github: "https://github.com/zenebumelaku",
+    demo: "#",
+  },
+  {
+    letter: "T",
+    title: "Tutor Agency Platform",
+    desc: "A full-stack platform for managing tutoring services, users, and sessions. Includes admin dashboard, user authentication, session management, and backend API integration.",
+    tags: ["React", "TypeScript", "Django", "REST API", "SQL"],
+    cat: "Full-Stack",
+    role: "Full-Stack Developer",
+    github: "https://github.com/zenebumelaku",
+    demo: "#",
+  },
+  {
+    letter: "D",
+    title: "DSA Repository",
+    desc: "Collection of solved problems and algorithm implementations in C++. Covers problem solving, algorithm practice, and competitive programming concepts.",
+    tags: ["C++", "Algorithms", "Data Structures"],
+    cat: "Other",
+    role: "Author",
+    github: "https://github.com/zenebumelaku",
+    demo: "#",
+  },
 ];
 
-const filters = ["All", "Full-Stack", "AI/ML", "WebGL"];
+const filters = ["All", "Full-Stack", "Other"];
 
 const ProjectsSection = () => {
   const [filter, setFilter] = useState("All");
@@ -60,7 +84,8 @@ const ProjectsSection = () => {
                 {p.letter}
               </div>
               <h3 className="text-lg font-semibold mb-2">{p.title}</h3>
-              <p className="text-muted-foreground text-sm mb-4 leading-relaxed">{p.desc}</p>
+              <p className="text-muted-foreground text-sm mb-2 leading-relaxed">{p.desc}</p>
+              <p className="text-xs text-primary font-mono mb-4">Role: {p.role}</p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {p.tags.map((t) => (
                   <span key={t} className="text-xs px-2 py-1 rounded bg-secondary text-muted-foreground">
@@ -69,12 +94,14 @@ const ProjectsSection = () => {
                 ))}
               </div>
               <div className="flex gap-4">
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-1 text-sm">
+                <a href={p.github} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-1 text-sm">
                   <Github className="w-4 h-4" /> Code
                 </a>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-1 text-sm">
-                  <ExternalLink className="w-4 h-4" /> Demo
-                </a>
+                {p.demo !== "#" && (
+                  <a href={p.demo} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-1 text-sm">
+                    <ExternalLink className="w-4 h-4" /> Demo
+                  </a>
+                )}
               </div>
             </motion.div>
           ))}

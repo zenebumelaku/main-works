@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, MapPin, Send } from "lucide-react";
+import { Mail, MapPin, Send, Github, Linkedin } from "lucide-react";
 import { useState } from "react";
 
 const ContactSection = () => {
@@ -74,11 +74,19 @@ const ContactSection = () => {
             <div className="space-y-4">
               <div className="flex items-center gap-3 text-muted-foreground">
                 <Mail className="w-5 h-5 text-primary" />
-                <span>alex@example.com</span>
+                <a href="mailto:melakuzenebu3@gmail.com" className="hover:text-primary transition-colors">melakuzenebu3@gmail.com</a>
               </div>
               <div className="flex items-center gap-3 text-muted-foreground">
                 <MapPin className="w-5 h-5 text-primary" />
-                <span>San Francisco, CA</span>
+                <span>Addis Ababa, Ethiopia</span>
+              </div>
+              <div className="flex items-center gap-3 text-muted-foreground">
+                <Github className="w-5 h-5 text-primary" />
+                <a href="https://github.com/zenebumelaku" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">github.com/zenebumelaku</a>
+              </div>
+              <div className="flex items-center gap-3 text-muted-foreground">
+                <Linkedin className="w-5 h-5 text-primary" />
+                <a href="https://www.linkedin.com/in/zenebu-melaku-7b9331225/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">linkedin.com/in/zenebu-melaku</a>
               </div>
             </div>
           </motion.div>

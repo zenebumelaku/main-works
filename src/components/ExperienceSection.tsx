@@ -1,12 +1,11 @@
 import { motion } from "framer-motion";
 
 const timeline = [
-  { year: "2019", title: "Started Coding", desc: "Fell in love with programming through competitive coding." },
-  { year: "2020", title: "First Internship", desc: "Full-stack development at a fast-growing startup." },
-  { year: "2021", title: "Hackathon Winner", desc: "Won first place at a national AI hackathon." },
-  { year: "2022", title: "Open Source", desc: "Major contributions to React and Three.js ecosystems." },
-  { year: "2023", title: "AI Research", desc: "Published paper on neural rendering techniques." },
-  { year: "2024", title: "Lead Engineer", desc: "Leading a team building next-gen creative tools." },
+  { year: "2024", title: "Started Programming Journey", desc: "Began learning programming fundamentals and problem solving." },
+  { year: "2024", title: "Data Structures & Algorithms", desc: "Built strong logical thinking through practicing DSA concepts." },
+  { year: "2024", title: "Backend Development", desc: "Learned Python, Java (OOP), and SQL for backend systems." },
+  { year: "2025", title: "Full Stack Development", desc: "Worked on real-world projects using React and Django." },
+  { year: "2026", title: "Expanding Skills", desc: "Currently learning mobile development and improving full-stack expertise." },
 ];
 
 const ExperienceSection = () => (

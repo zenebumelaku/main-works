@@ -19,7 +19,7 @@ const Index = () => (
     <ContactSection />
     <footer className="relative z-10 py-8 text-center text-muted-foreground text-sm border-t border-border">
       <div className="container mx-auto px-6">
-        © 2024 Alex. Built with passion and code.
+        © 2025 Zenebu Melaku. Built with passion and code.
       </div>
     </footer>
   </>

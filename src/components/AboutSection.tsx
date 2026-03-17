@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
-import { Code2, Lightbulb, Palette, Brain } from "lucide-react";
+import { Code2, Lightbulb, Palette, Layers } from "lucide-react";
 
 const cards = [
-  { icon: Code2, title: "Engineering", desc: "Building scalable, high-performance applications with modern architectures." },
-  { icon: Lightbulb, title: "Problem Solving", desc: "Breaking down complex challenges into elegant, efficient solutions." },
-  { icon: Palette, title: "Design", desc: "Crafting pixel-perfect interfaces with attention to every detail." },
-  { icon: Brain, title: "AI / ML", desc: "Exploring the frontiers of machine learning and intelligent systems." },
+  { icon: Code2, title: "Frontend Development", desc: "Building responsive, interactive, and modern web interfaces using React, Tailwind, and JavaScript." },
+  { icon: Palette, title: "UI/UX Design", desc: "Designing clean, visually appealing, and user-focused interfaces with attention to detail." },
+  { icon: Lightbulb, title: "Problem Solving", desc: "Strong foundation in data structures and algorithms, improving logical thinking and coding efficiency." },
+  { icon: Layers, title: "Full Stack Development", desc: "Experience working with both frontend and backend technologies including Django, APIs, and databases." },
 ];
 
 const AboutSection = () => (
@@ -19,10 +19,9 @@ const AboutSection = () => (
         className="text-center mb-16"
       >
         <p className="text-primary font-mono tracking-wider text-sm mb-2">About</p>
-        <h2 className="text-3xl md:text-4xl font-bold">Crafting the future</h2>
+        <h2 className="text-3xl md:text-4xl font-bold">Who I am</h2>
         <p className="text-muted-foreground mt-4 max-w-2xl mx-auto leading-relaxed">
-          I'm a passionate developer with expertise in full-stack development, creative engineering, and AI.
-          With years of experience building products used by thousands, I thrive at the intersection of technology and design.
+          I am a passionate and growth-driven developer based in Addis Ababa, Ethiopia, focused on building impactful digital solutions. I enjoy combining design and logic to create clean, user-friendly applications while continuously improving my technical and problem-solving skills.
         </p>
       </motion.div>
 

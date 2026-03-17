@@ -23,7 +23,7 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
-        <a href="#" className="text-primary font-mono font-bold text-xl">&lt;A/&gt;</a>
+        <a href="#" className="text-primary font-mono font-bold text-xl">&lt;Z/&gt;</a>
 
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-8">

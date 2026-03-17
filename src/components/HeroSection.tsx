@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import WireframeOrb from "./WireframeOrb";
 
-const roles = ["Full-Stack Developer", "Creative Engineer", "AI Enthusiast"];
+const roles = ["Frontend Developer", "UI Designer", "Web Developer", "Freelancer"];
 
 const HeroSection = () => {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -50,7 +50,7 @@ const HeroSection = () => {
             transition={{ delay: 0.4 }}
             className="text-5xl md:text-7xl font-bold mb-4"
           >
-            Hi, I'm <span className="text-gradient">Alex</span>
+            Hi, I'm <span className="text-gradient">Zenebu</span>
           </motion.h1>
 
           <motion.div
@@ -69,7 +69,7 @@ const HeroSection = () => {
             transition={{ delay: 0.8 }}
             className="text-muted-foreground max-w-lg mx-auto mb-10 leading-relaxed"
           >
-            Building immersive digital experiences at the intersection of design, engineering, and artificial intelligence.
+            I build modern, responsive web applications with a strong focus on clean design, performance, and real-world impact. Passionate about continuous learning, problem-solving, and turning ideas into powerful digital products.
           </motion.p>
 
           <motion.div
