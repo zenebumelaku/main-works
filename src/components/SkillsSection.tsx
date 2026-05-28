@@ -9,6 +9,7 @@ const skills = [
   { name: "SQL", level: 70 },
   { name: "C++", level: 50 },
   { name: "Python", level: 50 },
+  { name: "Flutter / Dart", level: 60 },
 ];
 
 const SkillsSection = () => (
