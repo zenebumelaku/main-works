@@ -4,6 +4,16 @@ import { useState } from "react";
 
 const projects = [
   {
+    letter: "S",
+    title: "Smart Campus",
+    desc: "A smart campus management platform designed to streamline university operations including student services, resource management, and campus navigation.",
+    tags: ["React", "TypeScript", "Tailwind"],
+    cat: "Full-Stack",
+    role: "Developer",
+    github: "https://github.com/zenebumelaku/smart-campus",
+    demo: "#",
+  },
+  {
     letter: "B",
     title: "Biometric Attendance System",
     desc: "A smart attendance system using facial recognition to eliminate proxy attendance. Features AI-powered recognition, real-time dashboard, automated reports, and role-based authentication.",
