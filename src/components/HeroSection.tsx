@@ -69,7 +69,7 @@ const HeroSection = () => {
             transition={{ delay: 0.8 }}
             className="text-muted-foreground max-w-lg mx-auto mb-10 leading-relaxed"
           >
-            I build modern, responsive web applications with a strong focus on clean design, performance, and real-world impact. Passionate about continuous learning, problem-solving, and turning ideas into powerful digital products.
+            I build modern, responsive web applications and mobile apps with a strong focus on clean design, performance, and real-world impact. Passionate about continuous learning, problem-solving, and turning ideas into powerful digital products — including cross-platform mobile experiences with Flutter.
           </motion.p>
 
           <motion.div
