@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
-import { Code2, Lightbulb, Palette, Layers } from "lucide-react";
+import { Code2, Lightbulb, Palette, Layers, Smartphone } from "lucide-react";
 
 const cards = [
   { icon: Code2, title: "Frontend Development", desc: "Building responsive, interactive, and modern web interfaces using React, Tailwind, and JavaScript." },
   { icon: Palette, title: "UI/UX Design", desc: "Designing clean, visually appealing, and user-focused interfaces with attention to detail." },
   { icon: Lightbulb, title: "Problem Solving", desc: "Strong foundation in data structures and algorithms, improving logical thinking and coding efficiency." },
   { icon: Layers, title: "Full Stack Development", desc: "Experience working with both frontend and backend technologies including Django, APIs, and databases." },
+  { icon: Smartphone, title: "Mobile Development", desc: "Building cross-platform mobile applications using Flutter and Dart, focused on smooth UX and real-world utility." },
 ];
 
 const AboutSection = () => (
@@ -25,7 +26,7 @@ const AboutSection = () => (
         </p>
       </motion.div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
         {cards.map((c, i) => (
           <motion.div
             key={c.title}
