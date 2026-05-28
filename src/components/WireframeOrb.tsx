@@ -56,7 +56,7 @@ const WireframeOrb = () => {
 
     const draw = () => {
       ctx.clearRect(0, 0, size, size);
-      ctx.strokeStyle = "hsla(174, 90%, 50%, 0.25)";
+      ctx.strokeStyle = "hsla(43, 90%, 50%, 0.25)";
       ctx.lineWidth = 0.8;
 
       edges.forEach(([a, b]) => {
@@ -73,7 +73,7 @@ const WireframeOrb = () => {
         const [x, y] = project(p);
         ctx.beginPath();
         ctx.arc(x, y, 1.5, 0, Math.PI * 2);
-        ctx.fillStyle = "hsla(174, 90%, 50%, 0.5)";
+        ctx.fillStyle = "hsla(43, 90%, 50%, 0.5)";
         ctx.fill();
       });
 

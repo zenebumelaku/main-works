@@ -38,8 +38,8 @@ const Starfield = () => {
         // Mix cyan and white stars
         const isCyan = s.size > 1.5;
         ctx.fillStyle = isCyan
-          ? `hsla(174, 90%, 50%, ${s.opacity * 0.6})`
-          : `hsla(210, 20%, 92%, ${s.opacity * 0.5})`;
+          ? `hsla(43, 90%, 50%, ${s.opacity * 0.6})`
+          : `hsla(40, 20%, 92%, ${s.opacity * 0.5})`;
         ctx.fill();
         s.y += s.speed;
         if (s.y > canvas.height) {
