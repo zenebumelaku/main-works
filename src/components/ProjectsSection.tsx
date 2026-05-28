@@ -4,6 +4,16 @@ import { useState } from "react";
 
 const projects = [
   {
+    letter: "Z",
+    title: "Zewg — Student Opportunity Platform",
+    desc: "A mobile application that helps students discover and access opportunities such as scholarships, internships, jobs, and events — all in one place.",
+    tags: ["Flutter", "Mobile", "Dart"],
+    cat: "Mobile",
+    role: "Mobile Developer",
+    github: "https://github.com/Belaw19/Zewg",
+    demo: "#",
+  },
+  {
     letter: "S",
     title: "Smart Campus",
     desc: "A smart campus management platform designed to streamline university operations including student services, resource management, and campus navigation.",
@@ -45,7 +55,7 @@ const projects = [
   },
 ];
 
-const filters = ["All", "Full-Stack", "Other"];
+const filters = ["All", "Full-Stack", "Mobile", "Other"];
 
 const ProjectsSection = () => {
   const [filter, setFilter] = useState("All");
